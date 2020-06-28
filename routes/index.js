@@ -13,11 +13,11 @@ router.post('/buy', (req, res) => {
 });
 
 router.get('/success', (req, res) => {
-    res.send('success'); //Quando cliente pagar a compra
+    res.render('success'); //Quando cliente pagar a compra
 });
 
 router.get('/cancel', (req, res) => {
-    res.send('cancel'); //Quando cliente cancelar a compra
+    res.render('cancel'); //Quando cliente cancelar a compra
 });
 
 module.exports = router;
