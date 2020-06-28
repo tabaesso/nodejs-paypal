@@ -19,6 +19,9 @@
 -  Get started for development:
    -  Type `yarn start` to start the application.
    -  Access `http://localhost:3000` on the browser.
+   
+## 🤠 Preview
+<img src="https://github.com/tabaesso/nodejs-paypal/blob/master/preview.gif"></img>
 
 ## :octocat: Author
 
