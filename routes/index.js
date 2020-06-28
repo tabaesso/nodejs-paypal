@@ -4,7 +4,7 @@ const paypalConfig = require('../config/paypal');
 
 paypal.configure(paypalConfig);
 
-const products = require('../config/products');
+const { products } = require('../config/products');
 
 router.get('/', (req, res) => res.render('index', { products }));
 
@@ -19,3 +19,5 @@ router.get('/success', (req, res) => {
 router.get('/cancel', (req, res) => {
     res.send({ cancel: true }); //Quando cliente cancelar a compra
 });
+
+module.exports = router;

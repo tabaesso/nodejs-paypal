@@ -12,4 +12,4 @@ app.use(bodyParser.json());
 
 app.use('/', require('./routes'));
 
-app.listen(3000, () => console.log('API is Alive'));
+app.listen(3000, () => console.log('Rodando na porta 3000'));

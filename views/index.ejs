@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOJA TI</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>LOJA TI</h2>
+        <hr />
+        <br />
+        
+        <div>
+            <% for(var i=0; i<products.length; i++){ %>
+                <div>
+                    <img src="<%= products[i].img %>"}>
+                </div>
+                <br />
+                <h2><%= products[i].titulo %></h2>
+                <p><%= products[i].descricao %></p>
+                <br />
+                <h3>Apenas R$ <%= products[i].preco %></h3>
+
+                <form action="/buy?id=<%= products[i].id %>" method="POST">
+                    <input type="submit" value="COMPRE AGORA!"/>
+                </form>
+            <%}%>
+        </div>
+    </div>
+</body>
+</html>
